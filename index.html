@@ -98,6 +98,20 @@ footer{padding:24px;border-top:1px solid #374151;text-align:center}
 .footer-links a:hover{color:white}
 .footer-copy{color:#4b5563;font-size:12px}
 .pub-card:hover{border-color:#60a5fa}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.team-card{background:#111827;border:1px solid #374151;border-radius:12px;padding:20px}
+.team-card h3{color:white;font-size:16px;margin-bottom:4px}
+.team-card .role{color:#60a5fa;font-size:13px;font-weight:500;margin-bottom:10px}
+.team-card p{color:#9ca3af;font-size:14px}
+.team-card .contact{color:#93c5fd;font-size:13px;margin-top:10px}
+.proj-list{max-width:800px;margin:0 auto 32px}
+.proj-item{margin-bottom:20px}
+.proj-item h3{color:white;font-size:17px;margin-bottom:6px}
+.proj-item p{color:#9ca3af;font-size:14px}
+.principles{max-width:800px;margin:0 auto}
+.principles li{color:#d1d5db;font-size:14px;margin-bottom:8px;margin-left:20px}
+.lang-block{border-top:1px solid #374151;margin-top:48px;padding-top:40px}
+@media(max-width:768px){.team-grid{grid-template-columns:1fr}}
 .modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.8);z-index:200;align-items:center;justify-content:center}
 .modal.active{display:flex}
 .modal-box{background:#1f2937;border-radius:16px;padding:32px;max-width:480px;width:90%;max-height:90vh;overflow-y:auto;position:relative;border:1px solid #374151}
@@ -143,6 +157,7 @@ textarea.form-input{resize:none;min-height:100px}
 <a href="javascript:void(0)" onclick="scrollToSection('projects')">Projects</a>
 <a href="javascript:void(0)" onclick="scrollToSection('apps')">Apps</a>
 <a href="javascript:void(0)" onclick="scrollToSection('experience')">Experience</a>
+<a href="javascript:void(0)" onclick="scrollToSection('research')">Research Team</a>
 <a href="https://sechan9999.github.io/ai-ml-delivery-playbook/projects.html" target="_blank" rel="noopener">All Projects</a>
 <a href="javascript:void(0)" onclick="openModal('contact')">Contact</a>
 </div>
@@ -383,6 +398,93 @@ View on GitHub
 <p><span class="author">Chun H, et al. (2020)</span> "Maternal exposure to air pollution and risk of Autism in children: A systematic review and meta-analyses" – <span style="color:#60a5fa">Environmental Pollution</span></p>
 <p style="color:#9ca3af;font-size:12px;margin-top:8px">doi.org/10.1016/j.envpol.2019.113307</p>
 </a>
+</div>
+</section>
+
+<section id="research" class="section section-alt">
+<div class="container">
+<h2 class="section-title">JNC TV — Civic Data Research</h2>
+<p class="section-desc">JNC TV is a non-profit Korean-American civic media organization based in CA. In addition to community journalism, JNC TV operates a non-commercial civic data research program that turns official public records — national health-survey data and election records — into verified, reproducible, bilingual (Korean–English) public resources for the Korean-American community and the wider public.</p>
+<p style="color:#d1d5db;font-size:14px;max-width:800px;margin:0 auto 40px;text-align:center">All research conducted under this program is non-commercial. Data, code, and findings are published openly, and every published figure is independently verified against its source records before release.</p>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">Research Team</h3>
+<div class="team-grid">
+<div class="team-card">
+<h3>Heekyoung Chun, ScD</h3>
+<p class="role">Principal Investigator / Scientific Lead</p>
+<p>Dr. Chun leads the design, analysis, and verification of all research conducted under JNC TV's civic data research program. He is a survey statistician and senior data scientist in health analytics at the U.S. Centers for Disease Control and Prevention (CDC), specializing in complex survey design and weighting, trend analysis, and reproducible statistical pipelines. His current work includes a re-analysis of U.S. Youth Risk Behavior Survey (YRBS) microdata, 2015–2025, and the statistical validation of official election tally records.</p>
+<p class="contact">Contact: <a href="mailto:tcgyver@jnctv.com" style="color:#93c5fd">tcgyver@jnctv.com</a></p>
+</div>
+<div class="team-card">
+<h3>Sechan Tak</h3>
+<p class="role">Research Engineer / Data Product Lead</p>
+<p>Sechan Tak is a member of the JNC TV staff and builds the data products and content pipelines for the research program, including interactive dashboards and weekly public-data monitoring reports. He is a graduate of Vanderbilt University (Political Science and Economics, Computer Science minor).</p>
+</div>
+<div class="team-card">
+<h3>Hyun Song, PhD</h3>
+<p class="role">Research Collaborator</p>
+<p>Dr. Song, a research scientist at Vanderbilt University, collaborates with the program on election-data research, including the bilingual Electoral Insights Hub, an open analytics platform for Korean and U.S. election data.</p>
+</div>
+</div>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">Current Research Projects</h3>
+<div class="proj-list">
+<div class="proj-item"><h3>1. Adolescent Health Trends and Equity, 2015–2025</h3><p>A fully reproducible re-analysis of public CDC Youth Risk Behavior Survey (YRBS) microdata examining whether the post-2021 improvement in adolescent mental health and risk behaviors reached all sex and racial/ethnic groups. Outputs: peer-reviewed manuscripts and public bilingual summaries.</p></div>
+<div class="proj-item"><h3>2. Election Records Digitization and Forecast Validation</h3><p>Digitization and statistical validation of approximately 25,000 official Korean ballot tally sheets, linked to precinct-level analysis, together with a calibrated Monte Carlo forecasting model for the 2026 U.S. midterm elections (40,000 correlated-error simulations, with all inputs sourced and reproducible). Outputs: open datasets, an open bilingual dashboard, and a conference paper.</p></div>
+<div class="proj-item"><h3>3. Public-Message Monitoring</h3><p>A weekly, openly published monitoring of public political messaging and large-language-model behavior, built and maintained by the research team as a public record for journalists and researchers.</p></div>
+</div>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">Research Principles</h3>
+<ul class="principles">
+<li><b>Reproducibility first:</b> every figure can be regenerated from public source data with published code.</li>
+<li><b>Human verification:</b> AI-assisted extraction and analysis are always checked by a statistician against source records before publication.</li>
+<li><b>Non-partisan and non-commercial:</b> the program accepts no campaign or commercial sponsorship for its research outputs.</li>
+<li><b>Bilingual by design:</b> findings are published in Korean and English for the communities the data describes.</li>
+</ul>
+<p style="color:#9ca3af;font-size:14px;text-align:center;margin-top:32px">Contact — Civic Data Research Program, JNC TV, USA · <a href="mailto:tcgyver@jnctv.com" style="color:#93c5fd">tcgyver@jnctv.com</a></p>
+
+<div class="lang-block">
+<h2 class="section-title">JNC TV 시민 데이터 연구</h2>
+<p class="section-desc">JNC TV는 CA 캘리포니아주에 기반을 둔 비영리 한인 시민 미디어 기관입니다. JNC TV는 커뮤니티 저널리즘과 함께, 국가 보건조사 자료와 선거 기록 등 공식 공공기록을 검증 가능하고 재현 가능한 한·영 이중언어 공공 자료로 만드는 비상업 시민 데이터 연구 프로그램을 운영합니다.</p>
+<p style="color:#d1d5db;font-size:14px;max-width:800px;margin:0 auto 40px;text-align:center">이 프로그램의 모든 연구는 비상업적으로 수행됩니다. 데이터와 코드, 연구 결과는 공개를 원칙으로 하며, 발표되는 모든 수치는 원본 기록과 대조해 독립적으로 검증한 뒤 공개합니다.</p>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">연구팀</h3>
+<div class="team-grid">
+<div class="team-card">
+<h3>전희경 (Heekyoung Chun), ScD</h3>
+<p class="role">연구책임자 / 과학 총괄</p>
+<p>전희경 박사는 JNC TV 시민 데이터 연구 프로그램의 모든 연구의 설계·분석·검증을 총괄합니다. 미국 질병통제예방센터(CDC)에서 보건 분석을 수행한 조사통계학자이자 수석 데이터 사이언티스트로, 복합표본 설계와 가중, 추세 분석, 재현 가능한 통계 파이프라인이 전문 분야입니다. 현재 미국 청소년위험행동조사(YRBS) 2015–2025 미시자료 재분석과 공식 선거 개표 기록의 통계적 검증을 수행하고 있습니다.</p>
+<p class="contact">연락처: <a href="mailto:tcgyver@jnctv.com" style="color:#93c5fd">tcgyver@jnctv.com</a></p>
+</div>
+<div class="team-card">
+<h3>탁세찬 (Sechan Tak)</h3>
+<p class="role">리서치 엔지니어 / 데이터 프로덕트 총괄</p>
+<p>탁세찬은 JNC TV 스태프로, 인터랙티브 대시보드와 주간 공공데이터 모니터링 리포트 등 연구 프로그램의 데이터 제품과 콘텐츠 파이프라인을 구축합니다. 밴더빌트대학교 졸업(정치학·경제학, 컴퓨터과학 부전공).</p>
+</div>
+<div class="team-card">
+<h3>송현 (Hyun Song), PhD</h3>
+<p class="role">연구 협력자</p>
+<p>송현 박사는 밴더빌트대학교 연구 사이언티스트로, 한·미 선거 데이터 개방형 분석 플랫폼인 Electoral Insights Hub를 포함한 선거 데이터 연구에서 본 프로그램과 협력합니다.</p>
+</div>
+</div>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">현재 연구 과제</h3>
+<div class="proj-list">
+<div class="proj-item"><h3>1. 청소년 건강 추세와 형평성, 2015–2025</h3><p>CDC 청소년위험행동조사(YRBS) 공개 미시자료를 전면 재현 가능하게 재분석해, 2021년 이후 청소년 정신건강과 위험행동의 개선이 성과 인종·민족 모든 집단에 도달했는지를 검증합니다. 성과물: 동료심사 논문과 한·영 공개 요약.</p></div>
+<div class="proj-item"><h3>2. 선거 기록 디지털화와 예측 검증</h3><p>한국 공식 개표현황표 약 25,000장의 디지털화와 통계적 검증, 투표구 단위 분석 연계, 그리고 2026년 미국 중간선거를 위한 보정된 몬테카를로 예측 모형(상관오차 시뮬레이션 40,000회, 모든 입력값 출처 명시·재현 가능). 성과물: 공개 데이터셋, 한·영 공개 대시보드, 학회 논문.</p></div>
+<div class="proj-item"><h3>3. 공공 메시지 모니터링</h3><p>연구팀이 구축·유지하는 정치 메시지와 거대언어모델 행동에 대한 주간 공개 모니터링으로, 언론인과 연구자를 위한 공공 기록으로 발행합니다.</p></div>
+</div>
+
+<h3 style="color:white;font-size:20px;font-weight:700;text-align:center;margin-bottom:24px">연구 원칙</h3>
+<ul class="principles">
+<li><b>재현 가능성 우선:</b> 모든 수치는 공개 원자료와 공개 코드로 재생성할 수 있습니다.</li>
+<li><b>인간 검증:</b> AI를 활용한 추출·분석은 발표 전에 통계학자가 원본 기록과 대조해 검증합니다.</li>
+<li><b>비당파·비상업:</b> 연구 성과물에 대해 선거 캠페인이나 상업적 후원을 받지 않습니다.</li>
+<li><b>이중언어 설계:</b> 연구 결과는 데이터가 설명하는 커뮤니티를 위해 한국어와 영어로 발표합니다.</li>
+</ul>
+<p style="color:#9ca3af;font-size:14px;text-align:center;margin-top:32px">연락처: JNC TV 시민 데이터 연구 프로그램, 미국 · <a href="mailto:tcgyver@jnctv.com" style="color:#93c5fd">tcgyver@jnctv.com</a></p>
+</div>
+
 </div>
 </section>
 
