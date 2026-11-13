@@ -13,9 +13,11 @@ html{scroll-behavior:smooth}
 body{font-family:system-ui,sans-serif;background:#111827;color:#e5e7eb;line-height:1.6}
 a{color:inherit;text-decoration:none}
 .nav{position:fixed;top:0;left:0;right:0;background:rgba(17,24,39,0.95);border-bottom:1px solid #374151;z-index:100;padding:16px 24px}
-.nav-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:20px;font-weight:700;color:#60a5fa}
-.nav-links{display:flex;gap:24px;font-size:14px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.logo{font-size:20px;font-weight:700;color:#60a5fa;white-space:nowrap}
+.nav-links{display:flex;gap:16px;font-size:14px;align-items:center}
+.nav-links a{white-space:nowrap}
+.nav-links .badge-new{margin-left:4px}
 .nav-links a:hover{color:#60a5fa}
 .btn{background:#2563eb;padding:8px 16px;border-radius:8px;font-size:14px;cursor:pointer;border:none;color:white}
 .btn:hover{background:#1d4ed8}
@@ -160,7 +162,6 @@ textarea.form-input{resize:none;min-height:100px}
 <a href="javascript:void(0)" onclick="scrollToSection('experience')">Experience</a>
 <a href="javascript:void(0)" onclick="scrollToSection('research')">Research Team</a>
 <a href="https://sechan9999.github.io/ai-ml-delivery-playbook/projects.html" target="_blank" rel="noopener">All Projects</a>
-<a href="javascript:void(0)" onclick="openModal('contact')">Contact</a>
 </div>
 <button class="btn" onclick="openModal('contact')">Contact Me</button>
 </div>
